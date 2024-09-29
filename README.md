@@ -1,5 +1,5 @@
 * Author: Bryson MacDuff
-* Edit Date: 2024-09-23
+* Edit Date: 2024-09-29
 * Description: This is a c++ template project
 * Build Instructions:
     * cd build
@@ -19,4 +19,4 @@
     * cp build/src/cpp-template deb/cpp-template/usr/local/bin
     * cd deb
     * dpkg-deb --build cpp-template
-    * dpkg -i cpp-template.deb
+    * apt install -y ./cpp-template.deb
