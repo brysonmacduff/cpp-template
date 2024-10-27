@@ -16,7 +16,7 @@
     cd build/release
     make test
 ## Run Instructions
-    ./build/release/src/cpp_template
+    ./build/release/src/cpp-template
 ## Debug Instructions
     cd build/debug
     cmake -DCMAKE_BUILD_TYPE=Debug ../..
