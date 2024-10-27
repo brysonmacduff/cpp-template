@@ -24,7 +24,7 @@
     cd src
     gdb cpp-template
         set breakpoint:
-            break \<file.cpp\>:\<line\>
+            break <file.cpp>:<line>
         common gdb commands:
             run
             step
