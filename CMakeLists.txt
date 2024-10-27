@@ -7,6 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # include testing dependencies
 include(CTest)
 find_package(GTest REQUIRED)
+find_package(spdlog REQUIRED)
 include(GoogleTest)
 
 # create subdirectories

@@ -4,9 +4,10 @@
 // from standard library
 #include <iostream>
 
-// from google test
+// from external
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
+#include <spdlog/spdlog.h>
 
 using namespace Geometry;
 
@@ -17,12 +18,29 @@ class MockShape : public Shape
 public:
     MOCK_METHOD(int, GetSideCount,());
 };
-    
+
+class ShapeTestFixture : public ::testing::Test
+{
+protected:
+    // Setup code executed before each test
+    void SetUp() override {
+        // Initialize resources here
+        spdlog::debug("ShapeTestFixture::SetUp()");
+    }
+
+    // Teardown code executed after each test
+    void TearDown() override {
+        // Clean up resources here
+        spdlog::debug("ShapeTestFixture::TearDown()");
+    }
+};
 }
+
+using namespace ShapeTesting;
 
 // GOOGLE TESTS
 
-TEST(shape_tests,side_count_constructor_test)
+TEST(ShapeTestFixture,side_count_constructor_test)
 {
     const int sides = 3;
     ASSERT_NO_FATAL_FAILURE(Shape s = Shape(sides));
