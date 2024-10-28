@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/cpp-template.dir/main.cpp.o CMakeFiles/cpp-template.dir/shape.cpp.o -o cpp-template  /usr/lib/x86_64-linux-gnu/libspdlog.so.1.9.2 /usr/lib/x86_64-linux-gnu/libfmt.so.8.1.1 -Wl,--as-needed 

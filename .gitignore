@@ -1,6 +1,6 @@
-# exclude build and debug files
-build/release/**
-build/debug/**
+# exclude release and debug files
+/build/release/**
+/build/debug/**
 # exclude build files in the deb directory
 deb/cpp-template/usr/**
 deb/*.*
