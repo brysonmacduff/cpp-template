@@ -1,6 +1,10 @@
 # exclude release and debug files
 /build/release/**
 /build/debug/**
+# keep the directories, but not contents
+!/build/.gitignore
+!/build/release/.gitignore
+!/build/debug/.gitignore
 # exclude build files in the deb directory
 deb/cpp-template/usr/**
 deb/*.*
