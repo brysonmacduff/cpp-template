@@ -19,7 +19,7 @@
     ./run.sh debug bin
 * The build.sh and run.sh scripts can be used to build and run both the target executable (cpp-template) and unit test executable (run_tests) in debug mode.
 * Running in debug mode uses GDB.
-# Common GDB commands
+### Common GDB commands
     break <file.cpp>:<line>
     run
     step
