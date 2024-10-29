@@ -9,19 +9,15 @@
 * Speed Log (spdlog)
     * libspdlog-dev
 ## Build Instructions
-    cd build/release
-    cmake ../..
-    cmake --build .
+    ./build.sh release
 ## Testing Instructions
     cd build/release
     make test
 ## Run Instructions
     ./build/release/src/cpp-template
 ## Debug Instructions
-    cd build/debug
-    cmake -DCMAKE_BUILD_TYPE=Debug ../..
-    cmake --build .
-    cd src
+    ./build.sh debug
+    cd build/debug/src
     gdb cpp-template
         set breakpoint:
             break <file.cpp>:<line>
@@ -29,8 +25,6 @@
             run
             step
             next
-## Build Debian Package:
-    cp build/release/src/cpp-template deb/cpp-template/usr/local/bin
-    cd deb
-    dpkg-deb --build cpp-template
-    apt install -y ./cpp-template.deb
+## Build Debian Package
+    ./build.sh debian
+    sudo apt install -y ./cpp-template.deb
