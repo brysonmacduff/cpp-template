@@ -19,7 +19,7 @@
     ./run.sh debug bin
 * The build.sh and run.sh scripts can be used to build and run both the target executable (cpp-template) and unit test executable (run_tests) in debug mode.
 * Running in debug mode uses GDB.
-### Common GDB commands
+### Common GDB Commands
     break <file.cpp>:<line>
     run
     step
@@ -29,3 +29,13 @@
     sudo apt install -y ./deb/cpp-template.deb
 ## Additional Notes
 * The build.sh and run.sh scripts automate the use of cmake, debian packing, and more.
+### build.sh Commands
+    ./build.sh clear
+    ./build.sh release
+    ./build.sh debug
+    ./build.sh debian
+### run.sh Commands
+    ./run.sh release bin
+    ./run.sh release test
+    ./run.sh debug bin
+    ./run.sh debug test
