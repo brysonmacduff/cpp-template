@@ -1,6 +1,6 @@
 ## Project Information
 * Author: Bryson MacDuff
-* Edit Date: 2024-10-29
+* Edit Date: 2024-11-09
 * Description: This is a c++ template project
 ## Dependencies
 * GoogleTest (GTest)

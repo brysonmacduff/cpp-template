@@ -1,3 +1,4 @@
+#!/bin/bash
 # this script is meant to be called from the top level directory of this project
 BUILD_TYPE=$1
 

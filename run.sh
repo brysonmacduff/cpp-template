@@ -1,3 +1,4 @@
+#!/bin/bash
 # this script is meant to be run from the top level project directory
 RUN_TYPE=$1 # refers to either release or debug
 RUN_TARGET=$2 # refers to the executable to be run (bin, test)
