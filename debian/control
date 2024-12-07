@@ -4,4 +4,4 @@ Version: 1.1
 Maintainer: Bryson MacDuff
 Architecture: all
 Description: This debian package is from a c++ template project.
-Build-Depends: libgtest-dev, libgmock-dev, libspdlog-dev
+Build-Depends: build-essential, libgtest-dev, libgmock-dev, libspdlog-dev, cmake
